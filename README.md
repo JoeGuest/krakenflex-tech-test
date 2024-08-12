@@ -31,3 +31,11 @@ bun test
 ```
 
 This will run the tests in the `tests` directory.
+
+## Requirements
+
+[ ] Retrieve all outages
+[ ] Retrieve information for a site ID
+[ ] Filter out historic outages/outages that don't have a matching device ID
+[ ] Add display name to outages
+[ ] Send updated list of outages for a site ID
