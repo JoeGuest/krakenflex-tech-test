@@ -1,10 +1,11 @@
-import apiKey from "../api-key.ts";
+import { getOutages } from "./get-outages.ts";
 
-const BASE_URL = "https://api.krakenflex.systems/interview-tests-mock-api/v1";
+export default async function run() {
+  const outages = await getOutages();
 
-const outagesResponse = await fetch(`${BASE_URL}/outages`, {
-  headers: { "X-API-Key": apiKey },
-});
-const outages = await outagesResponse.json();
+  console.log(outages);
 
-console.log(outages);
+  return outages;
+}
+
+run();
