@@ -12,6 +12,12 @@ I thought I'd experiment using Bun since it provides a JavaScript runtime, baked
 
 To install Bun, follow the instructions on the [Bun website](https://bun.sh/docs/installation).
 
+An API key is required to run the project. Once you have the API key, create a file called `api-key.ts` in the root directory of the project and add the following line:
+
+```ts
+export default "YOUR_API_KEY";
+```
+
 ## Running the project
 
 To run the project, run:
